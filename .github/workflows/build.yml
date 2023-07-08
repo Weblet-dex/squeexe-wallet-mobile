@@ -40,8 +40,8 @@ jobs:
         uses: gradle/gradle-build-action@v2.4.2
       # mm2 lib download
       - run: mkdir -p android/app/src/main/cpp/libs/{armeabi-v7a,arm64-v8a}
-      - run: curl -L "https://github.com/KomodoPlatform/atomicDEX-API/releases/download/v1.0.1-beta/mm2-6bb79b3d8-android-armv7-CI.zip" --output "mm2_armv7.zip"
-      - run: curl -L "https://github.com/KomodoPlatform/atomicDEX-API/releases/download/v1.0.1-beta/mm2-6bb79b3d8-android-aarch64-CI.zip" --output "mm2_aarch64.zip"
+      - run: curl -L "https://github.com/KomodoPlatform/atomicDEX-API/releases/download/v1.0.2-beta/mm2-fa745617d-android-armv7-CI.zip" --output "mm2_armv7.zip"
+      - run: curl -L "https://github.com/KomodoPlatform/atomicDEX-API/releases/download/v1.0.2-beta/mm2-fa745617d-android-aarch64-CI.zip" --output "mm2_aarch64.zip"
       - run: unzip mm2_armv7.zip -d android/app/src/main/cpp/libs/armeabi-v7a/
       - run: unzip mm2_aarch64.zip -d android/app/src/main/cpp/libs/arm64-v8a/
       # Save API binaries

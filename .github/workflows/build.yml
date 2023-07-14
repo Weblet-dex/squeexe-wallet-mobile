@@ -1,4 +1,4 @@
-name: Build atomicDEX
+name: Build Komodo Wallet
 on:
   workflow_dispatch:
   pull_request:

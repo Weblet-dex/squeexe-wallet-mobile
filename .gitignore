@@ -98,3 +98,11 @@ build/
 ios/Flutter/.last_build_id
 ios/libmm2.a
 .fvm
+
+web/
+
+test/widget_test.dart
+
+lib/generated_plugin_registrant.dart
+
+ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings

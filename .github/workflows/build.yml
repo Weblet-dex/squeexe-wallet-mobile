@@ -1,4 +1,4 @@
-name: Build Komodo Wallet
+name: Build Squeexe Wallet
 on:
   workflow_dispatch:
   pull_request:

@@ -1803,7 +1803,7 @@ class AppLocalizations {
 
   // Rebranding
   String get rebrandingAnnouncement => Intl.message(
-      "It's a new era! We have officially changed our name from 'AtomicDEX' to 'Komodo Wallet'",
+      "It's a new era!",
       name: 'rebrandingAnnouncement');
 
   String get officialPressRelease =>

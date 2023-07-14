@@ -221,8 +221,8 @@ class _CoinsPageState extends State<CoinsPage> {
                                   end: Alignment.topRight,
                                   stops: const <double>[0.01, 1],
                                   colors: const <Color>[
-                                    Color.fromRGBO(98, 90, 229, 1),
-                                    Color.fromRGBO(45, 184, 240, 1),
+                                    Color.fromRGBO(116, 26, 4, 1),
+                                    Color.fromRGBO(255, 103, 0, 1),
                                   ],
                                 )),
                               )),

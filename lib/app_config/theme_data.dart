@@ -37,9 +37,9 @@ DividerThemeData get _dividerThemeData => const DividerThemeData(
 
 TextSelectionThemeData get _textSelectionThemeData =>
     const TextSelectionThemeData(
-      selectionColor: Color.fromRGBO(57, 161, 238, 0.3),
-      cursorColor: Color.fromRGBO(57, 161, 238, 1),
-      selectionHandleColor: Color.fromRGBO(57, 161, 238, 1),
+      selectionColor: Color.fromRGBO(196, 52, 2, 0.3),
+      cursorColor: Color.fromRGBO(196, 52, 2, 1),
+      selectionHandleColor: Color.fromRGBO(196, 52, 2, 1),
     );
 
 BottomNavigationBarThemeData get _bottomNavigationBarThemeData =>
@@ -124,13 +124,13 @@ SliderThemeData get _sliderThemeDataLight => SliderThemeData(
 
 // Color scheme dark adapted from current dev
 ColorScheme get _colorScheme => const ColorScheme(
-      primary: Color.fromRGBO(42, 54, 71, 1),
-      primaryVariant: Color.fromRGBO(28, 36, 48, 1),
-      secondary: Color.fromRGBO(57, 161, 238, 1),
-      secondaryVariant: Color.fromRGBO(57, 161, 238, 1),
-      surface: Color.fromRGBO(42, 54, 71, 1),
-      background: Color.fromRGBO(30, 42, 58, 1),
-      error: Color.fromRGBO(202, 78, 61, 1),
+      primary: Color.fromRGBO(14, 17, 26, 1),
+      primaryVariant: Color.fromRGBO(0, 0, 0, 1),
+      secondary: Color.fromRGBO(196, 52, 2, 1),
+      secondaryVariant: Color.fromRGBO(196, 52, 2, 1),
+      surface: Color.fromRGBO(14, 17, 26, 1),
+      background: Color.fromRGBO(14, 17, 26, 1),
+      error: Color.fromRGBO(89, 23, 7, 1),
       onPrimary: Color.fromRGBO(255, 255, 255, 1),
       onSecondary: Color.fromRGBO(255, 255, 255, 1),
       onSurface: Color.fromRGBO(255, 255, 255, 1),
@@ -147,7 +147,7 @@ ColorScheme get _colorSchemeLight => const ColorScheme(
       secondaryVariant: Color.fromRGBO(60, 201, 191, 1),
       surface: Color.fromRGBO(255, 255, 255, 1),
       background: Color.fromRGBO(245, 245, 245, 1),
-      error: Color.fromRGBO(202, 78, 61, 1),
+      error: Color.fromRGBO(89, 23, 7, 1),
       onPrimary: Color.fromRGBO(69, 96, 120, 1),
       onSecondary: Color.fromRGBO(255, 255, 255, 1),
       onSurface: Color.fromRGBO(69, 96, 120, 1),
@@ -170,7 +170,7 @@ ThemeData getThemeDark() => ThemeData(
       errorColor: _colorScheme.error,
       brightness: _colorScheme.brightness,
       hintColor: _colorScheme.onSurface.withOpacity(0.4),
-      dialogBackgroundColor: const Color.fromRGBO(42, 54, 71, 1),
+      dialogBackgroundColor: const Color.fromRGBO(14, 17, 26, 1),
       disabledColor: const Color.fromRGBO(201, 201, 201, 1),
       dividerColor: _dividerThemeData.color,
       bottomAppBarColor: _colorScheme.primary,

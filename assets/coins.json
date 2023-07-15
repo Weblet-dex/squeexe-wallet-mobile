@@ -132,6 +132,25 @@
     "derivation_path": "m/44'/966'"
   },
   {
+    "coin": "FZ45T-PLG20",
+    "name": "fz45t_plg20",
+    "fname": "FZ45 Test",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 137,
+    "decimals": 18,
+    "avg_blocktime": 1.8,
+    "required_confirmations": 20,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "MATIC",
+        "contract_address": "0x88d99C85138Cf83F46d7f17528FCfEE740e414a9"
+      }
+    },
+    "derivation_path": "m/44'/966'"
+  },
+  {
     "coin": "PGX-PLG20",
     "name": "pegaxy_stone",
     "fname": "Pegaxy Stone",
@@ -3326,6 +3345,45 @@
     "trezor_coin": "Komodo"
   },
   {
+    "coin": "DFX-ERC20",
+    "name": "dfx_erc20",
+    "fname": "DFX Finance",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 1,
+    "decimals": 18,
+    "avg_blocktime": 0.25,
+    "avg_blocktime": 15,
+    "required_confirmations": 3,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "ETH",
+        "contract_address": "0x888888435FDe8e7d4c54cAb67f206e4199454c60"
+      }
+    },
+    "derivation_path": "m/44'/60'"
+  },
+  {
+    "coin": "DFX-PLG20",
+    "name": "dfx_plg20",
+    "fname": "DFX Finance",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 137,
+    "decimals": 18,
+    "avg_blocktime": 1.8,
+    "required_confirmations": 20,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "MATIC",
+        "contract_address": "0xE7804D91dfCDE7F776c90043E03eAa6Df87E6395"
+      }
+    },
+    "derivation_path": "m/44'/966'"
+  },
+  {
     "coin": "DGB",
     "name": "digibyte",
     "fname": "DigiByte",
@@ -4216,6 +4274,25 @@
     "links": {
       "homepage": "https://www.energyweb.org"
     }
+  },
+  {
+    "coin": "EXN-BEP20",
+    "name": "exn_bep20",
+    "fname": "Expoin",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 56,
+    "decimals": 8,
+    "avg_blocktime": 3,
+    "required_confirmations": 3,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "BNB",
+        "contract_address": "0xc88f6F4C400321FAd5c26d574f9933a991011360"
+      }
+    },
+    "derivation_path": "m/44'/714'"
   },
   {
     "coin": "FEI-ERC20",
@@ -12062,6 +12139,31 @@
       }
     },
     "derivation_path": "m/44'/714'"
+  },
+  {
+    "coin": "XEP-segwit",
+    "name": "xep",
+    "fname": "Electra Protocol",
+    "rpcport": 16816,
+    "pubtype": 55,
+    "p2shtype": 137,
+    "wiftype": 162,
+    "txversion": 2,
+    "txfee": 100000,
+    "mm2": 1,
+    "segwit": true,
+    "signature_version": "witness_v0",
+    "bech32_hrp": "ep",
+    "address_format": {
+      "format": "segwit"
+    },
+    "orderbook_ticker": "XEP",
+    "required_confirmations": 4,
+    "avg_blocktime": 80,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/597'"
   },
   {
     "coin": "XEP-BEP20",

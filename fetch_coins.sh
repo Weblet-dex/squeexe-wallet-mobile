@@ -9,7 +9,7 @@ fi
 
 # get coins file
 coins_repo_commit="$( jq -r '.coins_repo_commit' coins_ci.json )"
-curl -l "https://raw.githubusercontent.com/KomodoPlatform/coins/${coins_repo_commit}/coins" --output "assets/coins.json"
+curl -l "https://raw.githubusercontent.com/Weblet-dex/coins/master/coins" --output "assets/coins.json"
 
 # get assets lists
 jq -r 'keys | .[]' assets/coins_config.json > app_assets

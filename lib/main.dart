@@ -27,6 +27,7 @@ import '../screens/feed/feed_page.dart';
 import '../screens/markets/markets_page.dart';
 import '../screens/portfolio/coin_detail/coin_detail.dart';
 import '../screens/portfolio/coins_page.dart';
+import '../screens/squeexe/squeexe_page.dart';
 import '../services/lock_service.dart';
 import '../services/mm_service.dart';
 import '../utils/log.dart';
@@ -261,6 +262,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
   IntentDataProvider _intentDataProvider;
 
   final List<Widget> _children = <Widget>[
+    SqueexePage(),
     CoinsPage(),
     DexPage(),
     MarketsPage(),
@@ -483,6 +485,9 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               currentIndex: indexTab,
               elevation: 0,
               items: <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                    icon: const Icon(Icons.swap_vert, key: Key('main-nav-squeexe')),
+                    label: AppLocalizations.of(context).dex),
                 BottomNavigationBarItem(
                     icon: const Icon(
                       Icons.account_balance_wallet,

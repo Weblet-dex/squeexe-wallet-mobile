@@ -62,9 +62,14 @@ class _AppDrawerState extends State<AppDrawer> {
                     Flexible(
                       flex: 5,
                       child: SvgPicture.asset(
-                        'assets/branding/svg/mark_and_text_vertical_white.svg',
+                        Theme.of(context).brightness == Brightness.light
+                          ? 'assets/branding/svg/mark_and_text_vertical_light.svg'
+                          : 'assets/branding/svg/mark_and_text_vertical_white.svg',
+                      )
+                      //child: SvgPicture.asset(
+                        //'assets/branding/svg/mark_and_text_vertical_white.svg',
                         //color: Colors.white,
-                      ),
+                      //),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),

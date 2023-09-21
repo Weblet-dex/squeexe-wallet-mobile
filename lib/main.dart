@@ -487,16 +487,19 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               items: <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                     icon: const Icon(Icons.swap_vert, key: Key('main-nav-squeexe')),
-                    label: AppLocalizations.of(context).dex),
+                    label: 'Dashboard'),
+                    // label: AppLocalizations.of(context).dex),
                 BottomNavigationBarItem(
                     icon: const Icon(
                       Icons.account_balance_wallet,
                       key: Key('main-nav-portfolio'),
                     ),
-                    label: AppLocalizations.of(context).portfolio),
+                    label: 'Holdings'),
+                    //label: AppLocalizations.of(context).portfolio),
                 BottomNavigationBarItem(
                     icon: const Icon(Icons.swap_vert, key: Key('main-nav-dex')),
-                    label: AppLocalizations.of(context).dex),
+                    label: 'Trading'),
+                    //label: AppLocalizations.of(context).dex),
                 BottomNavigationBarItem(
                   icon: const Icon(
                     Icons.show_chart,

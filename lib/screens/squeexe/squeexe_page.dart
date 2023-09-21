@@ -26,7 +26,7 @@ class _SqueexePageState extends State<SqueexePage> with TickerProviderStateMixin
     @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Fz Dashboard')),
+      appBar: AppBar(title: const Text('Ag Dashboard')),
       body: const Center(
         child: Text(
           'Welcome to Squeexe Mobile!',

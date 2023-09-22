@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import '../../localizations.dart';
 import '../../../utils/log.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class SqueexePage extends StatefulWidget {
   @override
@@ -26,22 +27,9 @@ class _SqueexePageState extends State<SqueexePage> with TickerProviderStateMixin
     @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Ag Dashboard')),
-      body: const Center(
-        child: Text(
-          'Welcome to Squeexe Mobile!',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 40.0,
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        elevation: 10.0,
-        child: const Icon(Icons.add),
-        onPressed: () {
-          Log.println('squeexe_page:43', 'from sqx page');
-        },
+      body: const WebView(
+        initialUrl: 'https://squeexe.com/preview/dashboard/dashboard.html',
+        javascriptMode: JavascriptMode.unrestricted,
       ),
     );
   }

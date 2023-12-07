@@ -376,10 +376,10 @@
             }
         ]
     },
-	"FZ45T-PLG20": {
-        "coin": "FZ45T-PLG20",
+    "AG1T4-PLG20": {
+        "coin": "AG1T4-PLG20",
         "type": "Matic",
-        "name": "FZ45 Test",
+        "name": "Ag1_Test4",
         "coinpaprika_id": "",
         "coingecko_id": "",
         "livecoinwatch_id": "",
@@ -391,7 +391,7 @@
         "is_testnet": false,
         "currently_enabled": false,
         "wallet_only": false,
-        "fname": "FZ45 Test",
+        "fname": "Ag1_Test4",
         "rpcport": 80,
         "mm2": 1,
         "chain_id": 137,
@@ -402,11 +402,57 @@
             "type": "ERC20",
             "protocol_data": {
                 "platform": "MATIC",
-                "contract_address": "0x88d99C85138Cf83F46d7f17528FCfEE740e414a9"
+                "contract_address": "0x4EB447fEc206e77E4EC40607C4E2736cfC6E729B"
             }
         },
         "derivation_path": "m/44'/966'",
-        "contract_address": "0x88d99C85138Cf83F46d7f17528FCfEE740e414a9",
+        "contract_address": "0x4EB447fEc206e77E4EC40607C4E2736cfC6E729B",
+        "parent_coin": "MATIC",
+        "swap_contract_address": "0x9130b257D37A52E52F21054c4DA3450c72f595CE",
+        "nodes": [
+            {
+                "url": "https://node.komodo.live:8080/polygon",
+                "gui_auth": true
+            },
+            {
+                "url": "https://polygon-rpc.com"
+            },
+            {
+                "url": "https://poly-rpc.gateway.pokt.network"
+            }
+        ]
+    },
+    "AG47T4-PLG20": {
+        "coin": "AG47T4-PLG20",
+        "type": "Matic",
+        "name": "Ag47_Test4",
+        "coinpaprika_id": "",
+        "coingecko_id": "",
+        "livecoinwatch_id": "",
+        "explorer_url": "https://polygonscan.com/",
+        "explorer_tx_url": "",
+        "explorer_address_url": "",
+        "supported": [],
+        "active": false,
+        "is_testnet": false,
+        "currently_enabled": false,
+        "wallet_only": false,
+        "fname": "Ag47_Test4",
+        "rpcport": 80,
+        "mm2": 1,
+        "chain_id": 137,
+        "decimals": 18,
+        "avg_blocktime": 1.8,
+        "required_confirmations": 20,
+        "protocol": {
+            "type": "ERC20",
+            "protocol_data": {
+                "platform": "MATIC",
+                "contract_address": "0xF64335D219403F679DaAf9a00C8C16101E9F94f1"
+            }
+        },
+        "derivation_path": "m/44'/966'",
+        "contract_address": "0xF64335D219403F679DaAf9a00C8C16101E9F94f1",
         "parent_coin": "MATIC",
         "swap_contract_address": "0x9130b257D37A52E52F21054c4DA3450c72f595CE",
         "nodes": [
@@ -454,7 +500,7 @@
         "derivation_path": "m/44'/966'",
         "contract_address": "0xc1c93D475dc82Fe72DBC7074d55f5a734F8cEEAE",
         "parent_coin": "MATIC",
-        "swap_contract_address": "0x9130b257D37A52E52F21054c4DA3450c72f595CE",
+        "swap_contract_address": "",
         "fallback_swap_contract": "0x9130b257D37A52E52F21054c4DA3450c72f595CE",
         "nodes": [
             {

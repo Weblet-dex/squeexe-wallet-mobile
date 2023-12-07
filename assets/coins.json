@@ -132,9 +132,9 @@
     "derivation_path": "m/44'/966'"
   },
   {
-    "coin": "FZ45T-PLG20",
-    "name": "fz45t_plg20",
-    "fname": "FZ45 Test",
+    "coin": "AG1T4-PLG20",
+    "name": "ag1t4_plg20",
+    "fname": "Ag1_Test4",
     "rpcport": 80,
     "mm2": 1,
     "chain_id": 137,
@@ -145,7 +145,26 @@
       "type": "ERC20",
       "protocol_data": {
         "platform": "MATIC",
-        "contract_address": "0x88d99C85138Cf83F46d7f17528FCfEE740e414a9"
+        "contract_address": "0x4EB447fEc206e77E4EC40607C4E2736cfC6E729B"
+      }
+    },
+    "derivation_path": "m/44'/966'"
+  },
+  {
+    "coin": "AG47T4-PLG20",
+    "name": "ag47t4_plg20",
+    "fname": "Ag47_Test4",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 137,
+    "decimals": 18,
+    "avg_blocktime": 1.8,
+    "required_confirmations": 20,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "MATIC",
+        "contract_address": "0xF64335D219403F679DaAf9a00C8C16101E9F94f1"
       }
     },
     "derivation_path": "m/44'/966'"

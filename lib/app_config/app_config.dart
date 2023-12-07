@@ -24,7 +24,7 @@ class AppConfig {
   String get appCompanyLong => 'Komodo Platform';
   String get appCompanyShort => 'Komodo';
 
-  List<String> get defaultCoins => ['KMD', 'BTC'];
+  List<String> get defaultCoins => ['AG1T4-PLG20', 'AG47T4-PLG20', 'KMD', 'LTC', 'BTC', 'MATIC'];
   List<String> get coinsFiat => ['BTC', 'KMD'];
   List<String> get walletOnlyCoins => [
         'ARRR-BEP20',

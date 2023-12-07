@@ -234,17 +234,17 @@ class _AppDrawerState extends State<AppDrawer> {
                       },
                       leading: const Icon(Icons.settings,
                           key: Key('side-nav-settings'), size: 16)),
-                  _buildDrawerItem(
-                      title: Text(AppLocalizations.of(context).helpLink),
-                      onTap: () {
-                        Navigator.pop(context);
-                        Navigator.push<dynamic>(
-                            context,
-                            MaterialPageRoute<dynamic>(
-                                builder: (BuildContext context) => HelpPage()));
-                      },
-                      leading: const Icon(Icons.help,
-                          key: Key('side-nav-help-feedback'), size: 16)),
+                  // _buildDrawerItem(
+                  //     title: Text(AppLocalizations.of(context).helpLink),
+                  //     onTap: () {
+                  //       Navigator.pop(context);
+                  //       Navigator.push<dynamic>(
+                  //           context,
+                  //           MaterialPageRoute<dynamic>(
+                  //               builder: (BuildContext context) => HelpPage()));
+                  //     },
+                  //     leading: const Icon(Icons.help,
+                  //         key: Key('side-nav-help-feedback'), size: 16)),
                   StreamBuilder<bool>(
                     initialData: settingsBloc.isLightTheme,
                     stream: settingsBloc.outLightTheme,

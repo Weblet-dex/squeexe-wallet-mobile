@@ -116,8 +116,8 @@ class _SettingPageState extends State<SettingPage> {
             ),
             _buildTitle(AppLocalizations.of(context).oldLogsTitle),
             BuildOldLogs(),
-            _buildTitle(AppLocalizations.of(context).legalTitle),
-            _buildDisclaimerToS(),
+            //_buildTitle(AppLocalizations.of(context).legalTitle),
+            //_buildDisclaimerToS(),
             _buildTitle(AppLocalizations.of(context).developerTitle),
             _buildEnableTestCoins(),
             _buildTitle(version),
@@ -414,35 +414,35 @@ class _SettingPageState extends State<SettingPage> {
     );
   }
 
-  Widget _buildDisclaimerToS() {
-    return _chevronListTileHelper(
-        title: Text(AppLocalizations.of(context).disclaimerAndTos),
-        onTap: () {
-          showDialog(
-            context: context,
-            builder: (context) => ScrollableDialog(
-                mustScrollToBottom: false,
-                verticalButtons: PrimaryButton(
-                  key: const Key('settings-tos-close'),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  text: AppLocalizations.of(context).close,
-                ),
-                children: [
-                  Text(
-                      AppLocalizations.of(context)
-                          .eulaTitle1(appConfig.appName),
-                      style: Theme.of(context).textTheme.headline6),
-                  EULAContents(),
-                  const SizedBox(height: 16),
-                  Text(AppLocalizations.of(context).eulaTitle2,
-                      style: Theme.of(context).textTheme.headline6),
-                  TACContents(),
-                ]),
-          );
-        });
-  }
+  // Widget _buildDisclaimerToS() {
+  //   return _chevronListTileHelper(
+  //       title: Text(AppLocalizations.of(context).disclaimerAndTos),
+  //       onTap: () {
+  //         showDialog(
+  //           context: context,
+  //           builder: (context) => ScrollableDialog(
+  //               mustScrollToBottom: false,
+  //               verticalButtons: PrimaryButton(
+  //                 key: const Key('settings-tos-close'),
+  //                 onPressed: () {
+  //                   Navigator.of(context).pop();
+  //                 },
+  //                 text: AppLocalizations.of(context).close,
+  //               ),
+  //               children: [
+  //                 Text(
+  //                     AppLocalizations.of(context)
+  //                         .eulaTitle1(appConfig.appName),
+  //                     style: Theme.of(context).textTheme.headline6),
+  //                 EULAContents(),
+  //                 const SizedBox(height: 16),
+  //                 Text(AppLocalizations.of(context).eulaTitle2,
+  //                     style: Theme.of(context).textTheme.headline6),
+  //                 TACContents(),
+  //               ]),
+  //         );
+  //       });
+  // }
 
   Widget _buildUpdate() {
     final UpdatesProvider updatesProvider =

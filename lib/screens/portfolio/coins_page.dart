@@ -34,18 +34,18 @@ class _CoinsPageState extends State<CoinsPage> {
   double _heightSliver;
   double _widthScreen;
 
-  // Rebranding
-  Future<void> showRebrandingDialog(BuildContext context) async {
-    showDialog(
-      context: context,
-      barrierDismissible: true, // allow dismiss when clicking outside
-      builder: (BuildContext context) => RebrandingDialog(),
-    ).then((_) {
-      // This is called when the dialog is dismissed
-      Provider.of<RebrandingProvider>(context, listen: false)
-          .closeThisSession();
-    });
-  }
+  // // Rebranding
+  // Future<void> showRebrandingDialog(BuildContext context) async {
+  //   showDialog(
+  //     context: context,
+  //     barrierDismissible: true, // allow dismiss when clicking outside
+  //     builder: (BuildContext context) => RebrandingDialog(),
+  //   ).then((_) {
+  //     // This is called when the dialog is dismissed
+  //     Provider.of<RebrandingProvider>(context, listen: false)
+  //         .closeThisSession();
+  //   });
+  // }
 
   void _scrollListener() {
     setState(() {
@@ -59,19 +59,19 @@ class _CoinsPageState extends State<CoinsPage> {
     _scrollController.addListener(_scrollListener);
     if (mmSe.running) coinsBloc.updateCoinBalances();
 
-    // Schedule the dialog to show after the current frame
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      final rebrandingNotifier =
-          Provider.of<RebrandingProvider>(context, listen: false);
+    // // Schedule the dialog to show after the current frame
+    // SchedulerBinding.instance.addPostFrameCallback((_) async {
+    //   final rebrandingNotifier =
+    //       Provider.of<RebrandingProvider>(context, listen: false);
 
-      // Wait for the prefs to load
-      await rebrandingNotifier.prefsLoaded;
+    //   // Wait for the prefs to load
+    //   await rebrandingNotifier.prefsLoaded;
 
-      if (!rebrandingNotifier.closedPermanently &&
-          !rebrandingNotifier.closedThisSession) {
-        showRebrandingDialog(context);
-      }
-    });
+    //   if (!rebrandingNotifier.closedPermanently &&
+    //       !rebrandingNotifier.closedThisSession) {
+    //     showRebrandingDialog(context);
+    //   }
+    // });
 
     super.initState();
   }

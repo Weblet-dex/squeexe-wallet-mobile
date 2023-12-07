@@ -28,7 +28,7 @@ class _SqueexePageState extends State<SqueexePage> with TickerProviderStateMixin
   Widget build(BuildContext context) {
     return Scaffold(
       body: const WebView(
-        initialUrl: 'https://squeexe.com/preview/dashboard/dashboard.html',
+        initialUrl: 'https://weblet-dex.github.io/dashboard/mobile_dash.html',
         javascriptMode: JavascriptMode.unrestricted,
       ),
     );

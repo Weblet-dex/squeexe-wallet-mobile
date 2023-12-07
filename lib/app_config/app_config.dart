@@ -21,8 +21,8 @@ class AppConfig {
   // Brand config below
 
   String get appName => 'Squeexe Wallet';
-  String get appCompanyLong => 'Komodo Platform';
-  String get appCompanyShort => 'Komodo';
+  String get appCompanyLong => 'Squeexe';
+  String get appCompanyShort => 'Squeexe';
 
   List<String> get defaultCoins => ['AG1T4-PLG20', 'AG47T4-PLG20', 'KMD', 'LTC', 'BTC', 'MATIC'];
   List<String> get coinsFiat => ['BTC', 'KMD'];
